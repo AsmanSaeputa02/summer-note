@@ -8,6 +8,6 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
 ]
 
-# --- 3. เพิ่มเงื่อนไขนี้เข้าไปที่ท้ายไฟล์ ---
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
